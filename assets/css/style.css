@@ -1,0 +1,36 @@
+html{
+    position: relative;
+}
+
+.top{
+    position: absolute;
+    background-color:blue;
+    top: 0;
+    left:0;
+    width: 100%;
+    
+    
+}
+
+#logo{
+    float: left;
+    background-color: chartreuse;
+
+}
+
+#nav{
+    float: right;
+    list-style: none;
+}
+
+li{
+    display: inline-block;
+}
+
+#wrap{
+    width: 960px;
+    background-color: white;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 100px;
+}
