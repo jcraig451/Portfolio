@@ -3,21 +3,28 @@
 <html>
 <head>
     <title> Portfolio</title>
+    <!-- Linked page with CSS code -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
-</head>
+    <!-- Styled background with image -->
+    <style>
+    body{
+    background-image: url("assets/images/cork-board.png");
+    }
+    </style>
+  </head>
 
 
 <body>
   <header class="top">
     <section class="header"> 
       <div id="logo">
-        <h1 id="name">Josh Craig</h1>
+        <h1 id="heading">Josh Craig</h1>
       </div>
 
       <div>
         <ul id="nav">
-          <li>About</li>
-          <li>Portfolio</li>
+          <li class="line">About</li>
+          <li class="line">Portfolio</li>
           <li>Contact</li>
         </ul>
       </div>
@@ -26,17 +33,23 @@
   
   <div id="wrap">
 
-    <h1 id="About Me">About Me</h1>
+    <h1 id="heading">About Me</h1>
     <hr/>
     <img src="assets/images/profile_pic.jpg" class="profile_pic" width="320" height="320" alt="profile_pic">
-    <p>This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! This is a test i repeat this is a test! </p>
-    <p>this is the second paragraph.this is the second paragraph. this is the second paragraph. this is the second paragraph. this is the second paragraph. this is the second paragraph. this is the second paragraph.</p>
-
+    <div class="paragraph">
+      <p>I am 29 years old and one of the few and proud born and raised in Charlotte, NC. I just recently purchased a home in Mint Hill, NC, about 25 minutes South East of downtown Charlotte. In my free time you can always find me working out or doing side projects building or fixing things in my home or friends and family.</p>
+      <p>I graduated from UNC Charlotte in 2014 with a bachlors degree in Mechnical Engineering. Curently I am a Mechnial Design Engineer with over five years of design experience in consumer product development. The past four and a half years were centered around circular knitting machine design, along with a short time frame working as a contractor for Duke Energy in the distribution side of the company. Recently became employed at TTI Floor Care North America as a Design Engineer. This job consist of performing CAD design on new consumer products for Dirt Devil, Hoover & Orec vacuums.</p>
+      <p>My goals for taking this Full Stack Bootcamp is to gain experience in javascript and programming tools so I can further my career in Engineering. I also have a passion for blockchain technology and would like to apply the skills I gain from this coursework and continue to learn other programming languages.</p>
+      <p></p>
+    </div>     
   </div>
-</body>
 
-<footer class="footer">
-  Copyright @copy
-</footer>
+
+  <footer class="footer">
+    <div id="text"> 
+      &copy; Copyright
+   </div>
+  </footer>
+</body>
 
 </html>
