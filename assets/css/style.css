@@ -1,17 +1,26 @@
+/* This is the set-up for the entire web page  */
+/* this section is the css properties for the index.html page */
+/*  */
+
 html{
     position: relative;
     min-height: 100%;
-    
+}
+a{
+    text-decoration: none;
+    color: #777777;
 }
 
+/* this tag changes the fonts and text for all heading tags */
 #heading{
     font-family: Georgia, Times,'Times New Roman', serif;
 }
-
+/* changes text type and color of the body text */
 body{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
+    color: c;
 }
+/* setting the header in location */
 .top{
     position: absolute;
     background-color:#ffffff;
@@ -20,7 +29,7 @@ body{
     width: 100%;
     border-bottom: 2px solid #cccccc;
 }
-
+/* this is the name tag id  */
 #logo{
     float: left;
     background-color: #4aaaa5;
@@ -31,15 +40,16 @@ body{
     font-size: 18px;
 
 }
-
+/* this is the list tag id to change text characteristics  */
 #nav{
     float: right;
     list-style: none;
     margin-right: 195px;
     padding-top: 10px;
 }
-
+/* this modifies the list options  */
 li{
+    /* this prompts the list to change in line with on another */
     display: inline-block;
     padding-top: 10px;
     padding-left: 10px;
@@ -50,6 +60,7 @@ li{
     border-right: 2px solid #cccccc;
     padding-right: 10px;
 }
+/* this is the class that keeps all contents inside the whiteboard  */
 #wrap{
     width: 960px;
     background-color: white;
@@ -63,16 +74,17 @@ li{
     box-sizing: border-box;
     padding: 30px;
     color: #4aaaa5;
+    position: relative;
 
 }
-
+/* this is the class for my profile picture  */
 .profile_pic{
     float: left;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding-right: 30px;
+    padding-top: 25px;
     padding-bottom: 20px;
-
 }
+/* this is the class features for the writting inside the whiteboard */
 .paragraph{
     text-align: left;
     color: #777777;
@@ -80,7 +92,7 @@ li{
     line-height: 1.6;
 
 }
-
+/* this is the class features for the footer at the bottom of the page  */
 .footer{
     position: absolute;
     left: 0px;
@@ -93,8 +105,66 @@ li{
     color: white;
    
 }
-
+/* this is the id for the copyright text at the bottom of the page  */
 #text{
     color: white;
     padding-top: 15px;
+}
+
+/*  */
+/*  */
+/* Below this line is the css properties for the protfoio page  */
+/*  */
+/*  */
+
+/* game tags positioning and text sizing */
+.game_tags{
+    position: absolute;
+    bottom:40px;
+    width: 280px;
+    background-color: #4aaaa5;
+    text-align: center;
+    color: white;
+    font-family: Georgia, Times,'Times New Roman', serif;
+    
+}
+
+/* this sets all the images position */
+.games{
+    position: relative;
+    float: left;
+    padding: 30px;
+    top: 20px;
+    left: 10px;
+}
+
+
+/*  */
+/*  */
+/* this section below is for the contacts page  */
+/*  */
+/*  */
+
+#submit{
+    float: left;
+    background-color: #4aaaa5;
+    padding-left:30px;
+    padding-right:30px;
+    color: white;
+    font-size: 18px;
+}
+
+
+#user-pwd{
+    width: 895px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 18px;
+}
+
+#names{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    font-size: 20px;
+    line-height: 35px;
 }
