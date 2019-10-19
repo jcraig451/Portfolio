@@ -1,5 +1,4 @@
 <h1><strong>Portfolio Homework Assignment<strong></h1>
-<hr>
 
 <h2><strong>Description<strong></h2>
 This is my professional portfolio!
