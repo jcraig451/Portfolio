@@ -1,8 +1,14 @@
-<!-- HTML Bio with CSS -->
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+    <!-- this section contains the website general information and CSS  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About ME</title>
+    <!-- link css bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS path link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <!-- Linked page with CSS code -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <!-- Styled background with image -->
@@ -13,49 +19,70 @@
     </style>
   </head>
 
-<!-- This contains all content for the website in the body tag -->
-<body>
-  <!-- the header contains both Name logo and the listed web tags -->
-  <header class="top">
-    <section class="header"> 
-      <!-- name tag logo -->
-      <div id="logo">
-        <h1 id="heading">Josh Craig</h1>
-      </div>
-      <!-- listed web links -->
-      <div>
-        <ul id="nav">
-            <li class="line"><a href="index.html" target="About">About</a></li>
-            <li class="line"><a  href="portfolio.html" target="Portfolio"> Portfolio </a></li>
-            <li><a href="contact.html" target="Contact">Contact</a></li>
-        </ul>
-      </div>
-  </section>
-  </header>
-  <!-- This section contains all subjects that are in the white bordered frame  -->
-  <div id="wrap">
-    <!-- heading about me  -->
-    <h1 id="heading">About Me</h1>
-    <!-- this prompts a line below the heading  -->
-    <hr/>
-    <!-- My photo -->
-    <img src="assets/images/profile_pic.jpg" class="profile_pic" width="320" height="320" alt="profile_pic">
-    <!-- Thhis section contains my paragraphs -->
-    <div class="paragraph">
-      <p>I am 29 years old and one of the few and proud to be born and raised in Charlotte, NC. I just recently purchased a home in Mint Hill, NC, about 25 minutes South East of downtown Charlotte. In my free time you can always find me working out or doing side projects building or fixing things in my home or friends and family.</p>
-      <p>I graduated from UNC Charlotte in 2014 with a bachelor’s degree in Mechanical Engineering. Currently I am a Mechanical Design Engineer with over five years of design experience in consumer product development. The past four and a half years were centered around circular knitting machine design, along with a short time frame working as a contractor for Duke Energy in the distribution side of the company. Recently became employed at TTI Floor Care North America as a Design Engineer. This job consists of performing CAD design on new consumer products for Dirt Devil, Hoover & Orec vacuums.</p>
-      <p>My goals for taking this Full Stack Bootcamp is to gain experience in JavaScript and programming tools so I can further my career in Engineering. I also have a passion for blockchain technology and would like to apply the skills I gain from this coursework and continue to learn other programming languages.</p>
-      <p></p>
-    </div>     
-  </div>
-  <!-- this section is for the footer and all contents in its section  -->
-  <footer class="footer">
-    <div id="text"> 
-      <!-- copyright tag = &copy;  -->
-      &copy; Copyright
-    </div>
-  </footer>
-</body>
-<!-- closing of the page  -->
+  <!-- This contains all content for the website in the body tag -->
+  <body>
+    <!-- Navbar bootstrap heading with collapsable icon  -->
+    <div class="top">
+        <!-- when medium screen or smaller conditions are met the navbar will change style  -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <div id="logo">
+                    <h1 id="heading">Josh Craig</h1>
+                </div>
+                <!-- this section includes the hamburger style button  -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav ml-auto">
+                        <li class="line line2"><a href="index.html">About</a></li>
+                        <li class="line"><a  href="portfolio.html"> Portfolio </a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <container class="containerbody">
+                <div class="wrap">
+                    <div class="headingName">
+                        <!-- heading about me  -->
+                        <h1 class="headingtitle"id="heading">About Me</h1>
+                        </div>
+                        <!-- this prompts a line below the heading  -->
+                        <hr/>
+                        <!-- My photo -->
+                        <div class="col-md-6">
+                        <img src="assets/images/profile_pic.jpg" class="profile_pic img-fluid" alt="profile_pic">
+                        </div>
+                        <!-- Thhis section contains my paragraphs -->
+                        <div class="paragraph col-md-12">
+                          <p>I am 29 years old and one of the few and proud to be born and raised in Charlotte, NC. I just recently purchased a home in Mint Hill, NC, about 25 minutes South East of downtown Charlotte. In my free time you can always find me working out or doing side projects building or fixing things in my home or friends and family.</p>
+                          <p>I graduated from UNC Charlotte in 2014 with a bachelor’s degree in Mechanical Engineering. Currently I am a Mechanical Design Engineer with over five years of design experience in consumer product development. The past four and a half years were centered around circular knitting machine design, along with a short time frame working as a contractor for Duke Energy in the distribution side of the company. Recently became employed at TTI Floor Care North America as a Design Engineer. This job consists of performing CAD design on new consumer products for Dirt Devil, Hoover & Orec vacuums.</p>
+                          <p>My goals for taking this Full Stack Bootcamp is to gain experience in JavaScript and programming tools so I can further my career in Engineering. I also have a passion for blockchain technology and would like to apply the skills I gain from this coursework and continue to learn other programming languages.</p>
+                          <p></p>
+                        </div>     
+                         
+                </div>
+
+    </container>
+
+    <!-- this section is for the footer and all contents in its section  -->
+    <footer class="footer">
+        <div id="text"> 
+          <!-- copyright tag = &copy;  -->
+          &copy; Copyright
+        </div>
+    </footer>
+
+    <!-- These are the jquery and bootstrap links  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+  </body>
 </html>

@@ -22,36 +22,35 @@ body{
 }
 /* setting the header in location */
 .top{
-    position: absolute;
     background-color:#ffffff;
-    top: 0;
-    left:0;
-    width: 100%;
     border-bottom: 2px solid #cccccc;
 }
 /* this is the name tag id  */
 #logo{
-    float: left;
     background-color: #4aaaa5;
-    margin-left: 195px;
-    padding-left:30px;
-    padding-right:30px;
+    margin-left: 8%;
     color: white;
     font-size: 18px;
+}
 
-}
 /* this is the list tag id to change text characteristics  */
-#nav{
-    float: right;
+.nav{
     list-style: none;
-    margin-right: 195px;
-    padding-top: 10px;
+    margin-right: 11%;
 }
+.navbar-toggler{
+    margin-right: 8%;
+}
+/* this eliminates the preset padding by css bootstrap */
+.navbar {
+    padding: 0% 0%;
+}
+
 /* this modifies the list options  */
 li{
     /* this prompts the list to change in line with on another */
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 10px;
 
 }
@@ -60,36 +59,39 @@ li{
     border-right: 2px solid #cccccc;
     padding-right: 10px;
 }
+/* this aligns the hamburger dropdown to the right side  */
+.line2{
+    margin-left: auto;
+}
+
 /* this is the class that keeps all contents inside the whiteboard  */
-#wrap{
-    width: 960px;
+.wrap{
+    width: 80%;
     background-color: white;
     margin-left: auto;
     margin-right:auto;
-    margin-top: 110px;
+    margin-top: 5%;
     border: 1px solid #dddddd;
     overflow: hidden;
     height: wrap;
     margin-bottom: 70px;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 3%;
     color: #4aaaa5;
-    position: relative;
-
 }
 /* this is the class for my profile picture  */
 .profile_pic{
     float: left;
-    padding-right: 30px;
-    padding-top: 25px;
+    padding: 0 3%;
+    padding-top: 15px;
     padding-bottom: 20px;
 }
 /* this is the class features for the writting inside the whiteboard */
 .paragraph{
     text-align: left;
     color: #777777;
-    padding-top: 5px;
     line-height: 1.6;
+    padding: 1% 3%;
 
 }
 /* this is the class features for the footer at the bottom of the page  */
@@ -119,9 +121,9 @@ li{
 
 /* game tags positioning and text sizing */
 .game_tags{
-    position: absolute;
-    bottom:40px;
-    width: 280px;
+    position: relative;
+    bottom:60px;
+    width: 100%;
     background-color: #4aaaa5;
     text-align: center;
     color: white;
@@ -129,16 +131,13 @@ li{
     
 }
 
+
 /* this sets all the images position */
 .games{
     position: relative;
-    float: left;
-    padding-top: 20px;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    top: 20px;
-    left: 0px;
+    padding: 2% 1%;
 }
+
 
 /* this is text alignment and spacing for the submit button  */
 #submit{
@@ -156,20 +155,22 @@ li{
 #submit{
     float: left;
     background-color: #4aaaa5;
-    padding-left:30px;
-    padding-right:30px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
 #user-pwd{
-    width: 895px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 18px;
+    width: 100%;
+    margin: auto;
+    height: 26px;
 }
 
+#user-pwd2{
+    width: 100%;
+    margin: auto;
+    height: 30%;
+}
 #names{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
