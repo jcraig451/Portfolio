@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- this section contains the website general information and CSS  -->
-  <head>
+<!-- this section contains the website general information and CSS  -->
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About ME</title>
+    <title>Portfolio</title>
     <!-- link css bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- JS path link -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script async custom-element="amp-social-share"
+        src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
     <!-- Linked page with CSS code -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <!-- Styled background with image -->
     <style>
-    body{
-    background-image: url("assets/images/cork-board.png");
-    }
+        body {
+            background-image: url("assets/images/background.jpg");
+        }
     </style>
-  </head>
+</head>
 
-  <!-- This contains all content for the website in the body tag -->
-  <body>
+<!-- This contains all content for the website in the body tag -->
+
+<body>
     <!-- Navbar bootstrap heading with collapsable icon  -->
     <div class="top">
         <!-- when medium screen or smaller conditions are met the navbar will change style  -->
@@ -30,59 +39,181 @@
                     <h1 id="heading">Josh Craig</h1>
                 </div>
                 <!-- this section includes the hamburger style button  -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="nav ml-auto">
-                        <li class="line line2"><a href="index.html">About</a></li>
-                        <li class="line"><a  href="portfolio.html"> Portfolio </a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="line line2"><a href="#" id="indexBtn">About</a></li>
+                        <li class="line"><a href="#" id="portfolioBtn">Portfolio</a></li>
+                        <li><a href="#" id="contactBtn">Contact</a></li>
                     </ul>
-                    
+
                 </div>
             </div>
         </nav>
     </div>
-
+    <!--  -->
+    <!--  -->
+    <!-- Conatiner is the webpage below the nav bar section -->
     <container class="containerbody">
-                <div class="wrap">
+        <!-- This div contains all the information switching between pages -->
+        <div class="wrap">
+            <!--  -->
+            <!--  -->
+            <!-- Section of the About Page/ Index Page -->
+            <div id="indexPage" style="display:block">
+                <div class="headingName">
+                    <!-- heading about me  -->
+                    <h1 class="headingtitle" id="heading">About Me</h1>
+                </div>
+                <!-- this prompts a line below the heading  -->
+                <hr />
+                <!-- My photo -->
+                <div class="col-md-6">
+                    <img src="assets/images/profile_pic.jpg" class="profile_pic img-fluid" alt="profile_pic">
+                </div>
+                <!-- Thhis section contains my paragraphs -->
+                <div class="paragraph col-md-12">
+                    <p>Hello! Welcome to my personal portfolio page. I am 29 years old and one of the few and proud to
+                        be born and raised in Charlotte, NC. I just
+                        recently purchased a home in Mint Hill, NC, about 25 minutes South East of downtown Charlotte.
+                        In my free time you can always find me working out or doing side projects building or fixing
+                        things in my home or friends and family.</p>
+                    <p>I graduated from UNC Charlotte in 2014 with a bachelor’s degree in Mechanical Engineering.
+                        Currently I am a Mechanical Design Engineer with over five years of design experience in
+                        consumer product development. The past four and a half years were centered around circular
+                        knitting machine design, along with a short time frame working as a contractor for Duke Energy
+                        in the distribution side of the company. Recently became employed at TTI Floor Care North
+                        America as a Design Engineer. This job consists of performing CAD design on new consumer
+                        products for Dirt Devil, Hoover & Orec vacuums. Also, I am currently enrolled in Web Development
+                        classes to learn programing languages such as CSS, HTML, JavaScript, Node.JS and many others.
+                    </p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!-- Section of the Portfolio Page -->
+            <div id="portfolioPage" style="display : none;">
+                <div class="headingName">
+                    <!-- heading about me  -->
+                    <h1 class="headingtitle" id="heading">Portfolio</h1>
+                </div>
+                <!-- this prompts a line below the heading  -->
+                <hr />
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="apps">
+                            <a href="https://jcraig451.github.io/Devloper-Quiz/" target="blank">
+                                <img src="assets/images/Capture4.JPG" id="developerQuiz" width=100% height=auto
+                                    alt="Developer_Quiz_pic">
+                                <div class="appTags">
+                                    <h3 style="margin-top: 5px;">Developer Quiz</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Password Generator -->
+                    <div class="col-lg-6">
+                        <div class="apps">
+                            <a href="https://jcraig451.github.io/Password_Generator/" target="blank">
+                                <img src="assets/images/Capture1.JPG" id="passwordGenerator" width=100% height=auto
+                                    alt="rpg_game_pic">
+                                <div class="appTags">
+                                    <h3 style="margin-top: 5px;">Password Generator</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Weather Dashboard -->
+                    <div class="col-lg-6">
+                        <div class="apps">
+                            <a href="https://jcraig451.github.io/Weather-Dashboard/" target="blank">
+                                <img src="assets/images/Capture2.JPG" id="weatherDashboard" width=100% height=auto
+                                    alt="trivia_game_pic">
+                                <div class="appTags">
+                                    <h3 style="margin-top: 5px;">Weather Dashboard</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FeedMe Application Project Assignment  -->
+                    <div class="col-lg-6">
+                        <div class="apps">
+                            <a href="https://tcauley91.github.io/Feed-Me/" target="blank">
+                                <img src="assets/images/Capture3.JPG" id="feedmeApp" width=100% height=auto
+                                    alt="rpg_game_pic">
+                                <div class="appTags">
+                                    <h3 style="margin-top: 5px;">FeedMe App!</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <!--  -->
+            <!-- Section of the Contacts Page -->
+            <div id="contactPage" style="display: none;">
                     <div class="headingName">
                         <!-- heading about me  -->
-                        <h1 class="headingtitle"id="heading">About Me</h1>
-                        </div>
-                        <!-- this prompts a line below the heading  -->
-                        <hr/>
-                        <!-- My photo -->
-                        <div class="col-md-6">
-                        <img src="assets/images/profile_pic.jpg" class="profile_pic img-fluid" alt="profile_pic">
-                        </div>
-                        <!-- Thhis section contains my paragraphs -->
-                        <div class="paragraph col-md-12">
-                          <p>I am 29 years old and one of the few and proud to be born and raised in Charlotte, NC. I just recently purchased a home in Mint Hill, NC, about 25 minutes South East of downtown Charlotte. In my free time you can always find me working out or doing side projects building or fixing things in my home or friends and family.</p>
-                          <p>I graduated from UNC Charlotte in 2014 with a bachelor’s degree in Mechanical Engineering. Currently I am a Mechanical Design Engineer with over five years of design experience in consumer product development. The past four and a half years were centered around circular knitting machine design, along with a short time frame working as a contractor for Duke Energy in the distribution side of the company. Recently became employed at TTI Floor Care North America as a Design Engineer. This job consists of performing CAD design on new consumer products for Dirt Devil, Hoover & Orec vacuums.</p>
-                          <p>My goals for taking this Full Stack Bootcamp is to gain experience in JavaScript and programming tools so I can further my career in Engineering. I also have a passion for blockchain technology and would like to apply the skills I gain from this coursework and continue to learn other programming languages.</p>
-                          <p></p>
-                        </div>     
-                         
+                        <h1 class=" headingtitle" id="heading">Contact</h1>
+                    </div>
+                    <!-- this prompts a line below the heading  -->
+                    <hr />
+                    <form action="mailto:jcraig451@yahoo.com" method="post" enctype="text/plain" target="blank">
+                        <label>Name: <input id="user-pwd" type="text" name="name" placeholder="Full Name"></label>
+                        <br>
+                        <label>Company: <input id="user-pwd" type="text" name="company" placeholder="Company Name"></label>
+                        <br>
+                        <label>Email: <input id="user-pwd" type="text" name="email" placeholder="example@yahoo.com"></label>
+                        <br>
+                        <label>Comments:</label>
+                        <br>
+                        <input id="user-pwd2" placeholder="" type="text" name="comments">
+                        <br>
+                        <br>
+                            <input type="submit" id="formBtn" value="Send Email">
+                            <input type="reset" name="reset" value="Clear Form" id="formBtn">
+                    </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="links">
+                    <a href="https://github.com/jcraig451" target="blank"><button type="button" id="btn"
+                            class="gitBtn"><i class="fab fa-github fa-2x"></i></button></a>
+                    <a href="assets/images/Craig_Resume.pdf" target="blank"><button type="button" id="btn"
+                            class="resumeBtn"><i class="fas fa-file fa-2x"></i></button></a>
+                    <a href="https://www.linkedin.com/in/josh-craig-56a31719/" target="blank"><button type="button"
+                            id="btn" class="linkedBtn"><i class="fab fa-linkedin-in fa-2x"></i></button></a>
                 </div>
-
+            </div>
+        </div>
     </container>
 
     <!-- this section is for the footer and all contents in its section  -->
     <footer class="footer">
-        <div id="text"> 
-          <!-- copyright tag = &copy;  -->
-          &copy; Copyright
+        <div id="text">
+            <!-- copyright tag = &copy;  -->
+            &copy; Copyright
         </div>
     </footer>
 
     <!-- These are the jquery and bootstrap links  -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- This is created JS file  -->
+    <script src="assets/JS/main.js"></script>
 
 
-  </body>
+</body>
+
 </html>
