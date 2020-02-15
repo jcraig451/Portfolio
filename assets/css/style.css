@@ -134,6 +134,13 @@ li{
     font-family: Georgia, Times,'Times New Roman', serif;
     
 }
+.reposBtn{
+    position: absolute;
+    margin-left: 10px;
+    bottom: 0px;
+    height: 42px;
+    font-family: Georgia, Times,'Times New Roman', serif; 
+}
 
 /* this sets all the images position */
 .apps{
